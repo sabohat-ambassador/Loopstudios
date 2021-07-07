@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Umumiy stillar */
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* first-section */
+
+
+.first-section {
+    background: url(../img/backgraundnimg.jpg) no-repeat;
+    height: 650px;
+
+}
+
+header {
+    padding: 66px 0;
+}
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav ul li{
+    display: inline-block;
+}
+
+ul{
+    padding-left: 0;
+}
+
+
+
+.main-nav-link {
+    margin: 0 16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-size: 1.07rem;
+    position: relative;
+
+}
+
+.main-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.main-nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+.shape {
+    display: none;
+}
+
+.first-text {
+    color: white;
+    font-size: 5.14rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 40px;
+    width: 650px;
+    margin-top: 130px;
+}
+
+
+/* second-section */
+.gamer {
+    position: relative;
+    margin-top: 160px;
+}
+
+.text {
+    position: absolute;
+    top: 300px;
+    left: 620px;
+    background-color: white;
+    width: 540px;
+    padding: 0 50px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 3.42rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    color: black;
+    font-size: 1.07rem;
+    font-family: 'Alata', sans-serif;
+    opacity: 0.5;
+    line-height: 1.78rem;
+}
+
+/* third-section */
+.third-section {
+    margin-top: 180px;
+}
+
+.third-section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.link a {
+    text-decoration: none;
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+    border: 1px solid #000000;
+    padding: 13px 40px;
+}
+
+.link a:hover {
+    background-color: black;
+    color: white;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.column8 {
+    margin-right: 28px;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.column8:nth-child(4) {
+    margin-right: 0
+}
+
+.column8:nth-child(8) {
+    margin-right: 0
+}
+
+.column8 h3 {
+    position: absolute;
+    bottom: 19px;
+    color: white;
+    font-weight: 300;
+    font-size: 2.28rem;
+    padding-left: 40px;
+
+}
+
+.column8 img:hover {
+    opacity: 0.3;
+}
+
+.column8:hover h3 {
+    color: black;
+}
+
+
+/* main-footer */
+
+.main-footer {
+    background: #000000;
+    padding: 44px 0;
+}
+
+.main-footer .row {
+    justify-content: space-between;
+}
+
+.main-nav {
+    margin-top: 24px;
+}
+
+.main-footer .main-nav-link:nth-child(1) {
+    margin-left: 0px;
+}
+
+.sayts {
+    text-align: right;
+}
+
+.sayts a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    margin: 0 8px;
+    position: relative;
+    text-align: right;
+}
+
+.sayts a::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.sayts a:hover:after {
+    transform: scaleX(1);
+}
+
+.loop {
+    color: white;
+    font-size: 1.07rem;
+    font-family: 'Alata', sans-serif;
+}
