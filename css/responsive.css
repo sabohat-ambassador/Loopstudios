@@ -67,9 +67,29 @@
     .main-header .main-nav{
         display: none;
     }
-    .shape {
+    .main-header.on:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 800px;
+        background: black;
+    }
+
+    .main-header .menu-toggle.open {
         display: block;
     }
+    .main-header .menu-toggle.close {
+        display: none;
+    }
+    .main-header.on .menu-toggle.open {
+        display: none;
+    }
+    .main-header.on .menu-toggle.close {
+        display: block;
+    }
+  
     .first-text {
         width: 467px;
         font-size: 4rem;

@@ -48,6 +48,9 @@ body {
     height: 650px;
 
 }
+.menu-toggle{
+    display: none;
+}
 
 header {
     padding: 66px 0;

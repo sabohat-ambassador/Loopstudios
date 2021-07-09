@@ -14,12 +14,14 @@
 <body>
     <section class="first-section">
         <div class="container">
-            <header class="main-header">
+            <header id="mainHeader" class="main-header">
                 <div class="row">
                     <div class="logo">
                         <img src="img/loopstudios.png" alt="logo">
+                        <button class="menu-toggle open" onclick="openMenu()"><img src="img/Group.png" alt=""></button>
+                        <button class="menu-toggle close" onclick="closeMenu()"><img src="img/Rectangle Copy.png" alt=""></button>
                     </div>
-                    <nav class="main-nav">
+                    <nav id="mainnav" class="main-nav">
                         <a class="main-nav-link" href="#">About</a>
                         <a class="main-nav-link" href="#">Careers</a>
                         <a class="main-nav-link" href="#">Events</a>
@@ -128,6 +130,22 @@
             </div>
         </div>
     </footer>
+    <script>
+
+        const menu = document.getElementById('mainnav');
+        const header = document.getElementById('mainHeader');
+    
+        function openMenu() {
+            menu.style.display = 'block';
+            header.classList = 'main-header on';
+        }
+    
+        function closeMenu() {
+            menu.style.display = 'none';
+            header.classList = 'main-header';
+        }
+    </script>
+
 
 
 </body>
