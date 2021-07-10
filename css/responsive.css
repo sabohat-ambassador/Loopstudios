@@ -72,16 +72,40 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 50%;
+        top: 0;
         height: 800px;
         background: black;
+       
     }
+    .logo{
+        z-index: 999;
+    }
+   .main-nav a{
+       display: block;
+       font-family: 'Josefin Sans', sans-serif;
+       margin-bottom: 24px;
+       font-size: 2rem;
 
+   }
+
+    .main-nav{
+        z-index: 999;
+        margin-top: 150px;
+    }
     .main-header .menu-toggle.open {
         display: block;
+        z-index: 999;
+        background-color: transparent;
+        border: none;
+        
     }
     .main-header .menu-toggle.close {
         display: none;
+        z-index: 999;
+        background-color: transparent;
+        border: none;
+     
+        
     }
     .main-header.on .menu-toggle.open {
         display: none;
