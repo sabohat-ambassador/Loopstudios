@@ -67,7 +67,53 @@
     .main-header .main-nav{
         display: none;
     }
-    
+    .main-header.on:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 800px;
+        background: black;
+       
+    }
+    .logo{
+        z-index: 999;
+    }
+   .main-nav-link{
+       display: block;
+       font-family: 'Josefin Sans', sans-serif;
+       margin-bottom: 24px;
+       font-size: 2rem;
+
+   }
+
+    .main-nav{
+        z-index: 999;
+        margin-top: 150px;
+    }
+    .main-header .menu-toggle.open {
+        display: block;
+        z-index: 999;
+        background-color: transparent;
+        border: none;
+        
+    }
+    .main-header .menu-toggle.close {
+        display: none;
+        z-index: 999;
+        background-color: transparent;
+        border: none;
+     
+        
+    }
+    .main-header.on .menu-toggle.open {
+        display: none;
+    }
+    .main-header.on .menu-toggle.close {
+        display: block;
+    }
+  
     .first-text {
         width: 467px;
         font-size: 4rem;
@@ -135,53 +181,7 @@
 
 
 @media(max-width: 565px){
-    .main-header.on:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 800px;
-        background: black;
-       
-    }
-    .logo{
-        z-index: 999;
-    }
-   .main-nav-link{
-       display: block;
-       font-family: 'Josefin Sans', sans-serif;
-       margin-bottom: 24px;
-       font-size: 2rem;
 
-   }
-
-    .main-nav{
-        z-index: 999;
-        margin-top: 150px;
-    }
-    .main-header .menu-toggle.open {
-        display: block;
-        z-index: 999;
-        background-color: transparent;
-        border: none;
-        
-    }
-    .main-header .menu-toggle.close {
-        display: none;
-        z-index: 999;
-        background-color: transparent;
-        border: none;
-     
-        
-    }
-    .main-header.on .menu-toggle.open {
-        display: none;
-    }
-    .main-header.on .menu-toggle.close {
-        display: block;
-    }
-  
     .first-text {
         width: 390px;
         font-size: 3rem;
